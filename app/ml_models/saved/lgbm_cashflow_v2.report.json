@@ -1,0 +1,49 @@
+{
+  "account_id": "all",
+  "approved": true,
+  "champion": "hybrid_lgbm",
+  "data_quality": {
+    "account_id": "all",
+    "eligible_settled_load_events": 606,
+    "events_total": 3571,
+    "events_with_due_date": 3571,
+    "invalid_numeric_event_ids": [],
+    "pending_or_other_events": 93,
+    "settled_date_range": {
+      "end": "2026-10-13T20:22:48.696000",
+      "start": "2024-10-30T03:30:00"
+    },
+    "settled_events": 3478
+  },
+  "metrics": {
+    "base_mean": {
+      "label": "Baseline: Historical Mean",
+      "ratio_mae": 0.24273546503541565,
+      "usd_mae": 63472.17243938808,
+      "usd_r2": 0.9682254985612984,
+      "usd_rmse": 166404.04864439045
+    },
+    "base_roll3": {
+      "label": "Baseline: 3-Week Rolling Ratio",
+      "ratio_mae": 0.14433225396474553,
+      "usd_mae": 34187.17876470228,
+      "usd_r2": 0.9916029037346884,
+      "usd_rmse": 85543.90708480998
+    },
+    "hybrid_lgbm": {
+      "label": "Residual LightGBM Engine (v2)",
+      "ratio_mae": 0.1353762662786037,
+      "usd_mae": 24729.986408861863,
+      "usd_r2": 0.9960044689982349,
+      "usd_rmse": 59008.11867372969
+    }
+  },
+  "residual_band_80": {
+    "high": 0.09510611812639125,
+    "low": -0.2917815567790618
+  },
+  "residual_band_observed_coverage": 0.8285714285714286,
+  "trained_at": "2026-10-14T23:23:33.206402+00:00",
+  "training_weeks": 72,
+  "validation_observations": 35
+}
